@@ -1,7 +1,12 @@
 <template>
   <div class="home clearfix">
     <sidebar style="float: left;"></sidebar>
-    <div class="content">首页</div>
+    <div class="content">首页
+      <el-row>
+        <el-radio v-model="radio" label="1">备选项</el-radio>
+        <el-radio v-model="radio" label="2">备选项</el-radio>
+      </el-row>
+    </div>
   </div>
 </template>
 
@@ -14,7 +19,7 @@ export default {
   },
   data() {
     return {
-
+      radio: '1'
     }
   }
 }

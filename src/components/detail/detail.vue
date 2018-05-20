@@ -1,7 +1,15 @@
 <template>
   <div class="detail">
     <sidebar style="float: left;"></sidebar>
-    <div class="content">详情页</div>
+    <div class="content">详情页
+      <el-row>
+        <el-date-picker
+          v-model="value"
+          type="date"
+          placeholder="选择日期">
+        </el-date-picker>
+      </el-row>
+    </div>
   </div>
 </template>
 
@@ -14,7 +22,7 @@ export default {
   },
   data() {
     return {
-
+      value: ''
     }
   }
 }
