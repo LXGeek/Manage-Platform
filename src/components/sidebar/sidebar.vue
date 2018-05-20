@@ -9,6 +9,7 @@
               <ul>
                   <li><router-link :to="{ name: 'Home'}"><span>首页</span></router-link></li>
                   <li><router-link :to="{ name: 'Detail'}"><span>详情页</span></router-link></li>
+                  <li><router-link :to="{ name: 'Demo'}"><span>demo</span></router-link></li>
                   <li><a href="javascript:;"><span>分类管理</span></a></li>
                   <li><a href="javascript:;"><span>系统日志</span></a></li>
               </ul>

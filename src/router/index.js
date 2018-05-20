@@ -12,6 +12,12 @@ const Detail = (resolve) =>{
   })
 }
 
+const Demo = (resolve) =>{
+  import('@/components/demo/demo.vue').then((module) =>{
+      resolve(module)
+  })
+}
+
 Vue.use(Router)
 
 export default new Router({
@@ -31,6 +37,11 @@ export default new Router({
       path: '/detail',
       name: 'Detail',
       component: Detail
+    },
+    {
+      path: '/demo',
+      name: 'Demo',
+      component: Demo
     }
   ]
 })
