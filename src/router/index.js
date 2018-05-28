@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+const Login = (resolve) =>{
+  import('@/components/login/login.vue').then((module) =>{
+      resolve(module)
+  })
+}
+
 const Home = (resolve) =>{
   import('@/components/home/home.vue').then((module) =>{
       resolve(module)
@@ -12,8 +18,8 @@ const Detail = (resolve) =>{
   })
 }
 
-const Demo = (resolve) =>{
-  import('@/components/demo/demo.vue').then((module) =>{
+const Client = (resolve) =>{
+  import('@/components/client/client.vue').then((module) =>{
       resolve(module)
   })
 }
@@ -29,6 +35,11 @@ export default new Router({
       component: Home
     },
     {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
       path: '/home',
       name: 'Home',
       component: Home
@@ -39,9 +50,9 @@ export default new Router({
       component: Detail
     },
     {
-      path: '/demo',
-      name: 'Demo',
-      component: Demo
+      path: '/client',
+      name: 'Client',
+      component: Client
     }
   ]
 })

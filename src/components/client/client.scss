@@ -3,24 +3,33 @@
   .el-main {
     float: left;
     background-color: #B3C0D1;
-    .main-left {
-      background-color: white;
-      float: left;
-      height: 600px;
-      width: 600px;
-      .el-tabs__header {
-        margin:0 15px 15px;
+    .main-top {
+      padding: 10px 10px 0 10px;
+      background: white;
+      position: relative;
+      height: 60px;
+      border-bottom: none;
+      box-shadow: 0 -2px 0 0 #00aaef inset;
+      .main-top-left {
+        display:inline;
+        span {
+          font-size: 20px;
+          font-family: 仿宋;
+        }
+      }
+      .main-top-right {
+        float: right;
+        display:inline;
       }
     }
-    .main-right {
-      float:right;
-      width: 400px;
-      .main-right-top {
-        margin-left: 30px;
-        background-color: white;
-        height: 300px;
-        width: 300px;
-      }
+    .main-buttom {
+      background-color: white;
+      height: 400px;
+      padding: 20px;
+    }
+    .main-foot {
+      background-color: white;
+      margin: 10px 0 0 0;
     }
   }
   .el-header {

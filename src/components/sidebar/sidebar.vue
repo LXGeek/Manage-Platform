@@ -17,7 +17,7 @@
           <li class="nav-item">
               <a href="javascript:;"><i class="my-icon nav-icon icon_2"></i><span>文章管理</span><i class="my-icon nav-more"></i></a>
               <ul>
-                  <li><a href="javascript:;"><span>站内新闻</span></a></li>
+              <li><router-link :to="{ name: 'Client'}"><span>客户</span></router-link></li>
                   <li><a href="javascript:;"><span>站内公告</span></a></li>
                   <li><a href="javascript:;"><span>登录日志</span></a></li>
               </ul>
